@@ -2,11 +2,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.cleo"
+	id = "com.tokomobile.fadhia"
 	version = "1.0.0">
-	<name>CLEO</name>
+	<name>FADHIA</name>
 	<description>
-	CLEO by Novatama Infomedia.
+	FADHIA by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile
