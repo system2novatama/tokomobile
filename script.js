@@ -1,12 +1,12 @@
 
-	var shop_name = "MissOnlineShop"; // NAMA TOKO ONLINE
-	var domain = "http://missonlineshops.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "NineOneOneCollection"; // NAMA TOKO ONLINE
+	var domain = "http://nineoneone-collection.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/MissOnlineShop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "4bcf095798f55a25402fb4018df9f216"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/NineOneOneCollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "37617d981cf2bba553f3ccb1f4e430a2"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
