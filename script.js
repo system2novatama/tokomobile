@@ -1,11 +1,11 @@
 
-	var shop_name = "GrosirAccessories"; // NAMA TOKO ONLINE
-	var domain = "http://grosiraccessories.com/mobile"; // DOMAIN URL ADMIN
+	var shop_name = "GrosirAccPro"; // NAMA TOKO ONLINE
+	var domain = "http://grosiraccessories.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/GrosirAccessories"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var dir_image = "Pictures/GrosirAccPro"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
 	var token = "1966bd31b66c62deeca961b0af06d1f9"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
