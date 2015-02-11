@@ -2,11 +2,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.grosiraccpro"
+	id = "com.tokomobile.1stlinecorner"
 	version = "1.0.0">
-	<name>Grosir Acc Pro</name>
+	<name>1st Line Corner</name>
 	<description>
-	Grosir Acc Pro by Novatama Infomedia.
+	1st Line Corner by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile
