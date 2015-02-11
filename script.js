@@ -1,5 +1,5 @@
 
-	var shop_name = "GrosirAccPro"; // NAMA TOKO ONLINE
+	var shop_name = "Grosir Acc Pro"; // NAMA TOKO ONLINE
 	var domain = "http://grosiraccessories.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
