@@ -2,11 +2,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.1stlinecorner"
+	id = "com.tokomobile.kyoko&yoko"
 	version = "1.0.0">
-	<name>1st Line Corner</name>
+	<name>KYOKO & YOKO</name>
 	<description>
-	1st Line Corner by Novatama Infomedia.
+	KYOKO & YOKO by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile

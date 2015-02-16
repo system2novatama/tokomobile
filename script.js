@@ -1,12 +1,12 @@
 
-	var shop_name = "1st Line Corner"; // NAMA TOKO ONLINE
-	var domain = "http://1stlinecorner.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "KYOKO & YOKO"; // NAMA TOKO ONLINE
+	var domain = "http://kyoko-yoko.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/1stlinecorner.com"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "a18f66b893d0dad1a5e3cc579b788217"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/kyoko&yoko;"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "b0b74d0fedba3d453514b0dc64b22016"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
