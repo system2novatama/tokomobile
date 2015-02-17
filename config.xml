@@ -4,9 +4,9 @@
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id = "com.tokomobile.fashionstore"
 	version = "1.0.0">
-	<name>Fashion Store</name>
+	<name>FashionStore</name>
 	<description>
-	Fashion Store by Novatama Infomedia.
+	FashionStore by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile

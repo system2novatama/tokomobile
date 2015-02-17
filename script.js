@@ -1,5 +1,5 @@
 
-	var shop_name = "Fashion Store"; // NAMA TOKO ONLINE
+	var shop_name = "FashionStore"; // NAMA TOKO ONLINE
 	var domain = "http://fashionstore-dps.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
