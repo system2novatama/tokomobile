@@ -2,11 +2,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.fashionstore"
+	id = "com.tokomobile.urpapersign"
 	version = "1.0.0">
-	<name>FashionStore</name>
+	<name>urpapersign</name>
 	<description>
-	FashionStore by Novatama Infomedia.
+	urpapersign by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile

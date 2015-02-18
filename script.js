@@ -1,12 +1,12 @@
 
-	var shop_name = "FashionStore"; // NAMA TOKO ONLINE
-	var domain = "http://fashionstore-dps.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "urpapersign"; // NAMA TOKO ONLINE
+	var domain = "http://urpapersign.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/FashionStore"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "c6f3d7aeec0068d880ab3ca1830d3fd1"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/urpapersign"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "14ec501e728a6c6475bc938db25dbe3f"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
