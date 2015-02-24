@@ -2,11 +2,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.binjuw"
+	id = "com.tokomobile.pusatonlinebajutermurah"
 	version = "1.0.0">
-	<name>BINJUW</name>
+	<name>Pusat Online Baju Termurah</name>
 	<description>
-	BINJUW by Novatama Infomedia.
+	Pusat Online Baju Termurah by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile

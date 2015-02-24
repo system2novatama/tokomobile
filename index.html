@@ -80,6 +80,17 @@
 	</div>	
 </div>
 
+<!-- Black page -->
+<div data-role="page" data-control-title="Welcome" id="page_notifikasi" >
+    
+	<div role="main" class="ui-content">
+	<div class="loading-content">
+		<h3>Notifikasi</h3><br/>
+		<div id="notif_message"></div>		
+	</div>
+	</div>	
+</div>
+
 <!-- LOGIN -->
 <div data-role="page" data-control-title="Login" id="page_login" >
     <div data-theme="b" data-role="header">
@@ -183,10 +194,17 @@
         </div>
         <div class="ui-field-contain white" data-controltype="textinput">
             <label for="textinput1">
-                Phone
+                Telepon
             </label>
             <input name="register_phone" id="register_phone" placeholder="Phone" value="" type="text">
         </div>
+		 <div class="ui-field-contain white" data-controltype="textinput">
+            <label for="register_pinbb">
+                PIN BB
+            </label>
+            <input name="register_pinbb" id="register_pinbb" placeholder="PIN BB" value="" type="text">
+        </div>
+		
 		<button id="register-button" class="ui-btn ui-btn-b ui-icon-arrow-r ui-btn-icon-right">REGISTER</button>
        
     </div>
@@ -286,7 +304,7 @@
 		<div data-role="navbar">
 			<ul>	
 			<li>
-				<a href="#page_settings" class="ui-icon-gear ui-btn-a ui-btn-icon-top show-page-loading-msg menu_page_setting" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Pengaturan</a>
+				<a href="#page_settings" class="ui-icon-gear ui-btn-a ui-btn-icon-top show-page-loading-msg" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Pengaturan</a>
 			</li>
 			</ul>
 		</div>
@@ -301,15 +319,7 @@
 		
     </div>
 	
-	<div data-theme="b" data-role="footer" class="back-footer" >
-       <div data-role="navbar">
-			<ul>
-				<li>
-				<a href="#page_login" class="ui-icon-power ui-btn-b ui-btn-icon-top show-page-loading-msg menu_page_logout" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Keluar</a>
-				</li>		
-			</ul>
-		</div><!-- /navbar -->
-    </div>
+	
 	
 	
 </div>
@@ -620,6 +630,15 @@
 			</div>
 			<div class="ui-body ui-body-a">
 				<input name="slider-fill" id="item_qty" value="" min="" max="" step="1"  type="number">
+			</div>
+		</div>
+		
+		<div class="ui-corner-all custom-corners">
+			<div class="ui-bar ui-bar-a">
+				<h3>Catatan</h3>
+			</div>
+			<div class="ui-body ui-body-a">
+				<textarea name="item_notes" id="item_notes"> </textarea>
 			</div>
 		</div>
 		
@@ -952,6 +971,8 @@
 		<p>Dikirim ke : <span class="order_detail_to"></span></p>
 		<p>Kota : <span class="order_detail_kota"></span></p>
 		<p>Provinsi : <span class="order_detail_provinsi"></span></p>
+		<p>Status Pengiriman : <span class="order_detail_shipping_status"></span></p>
+		<p>Resi : <span class="order_detail_resi"></span></p>
 		<hr/>
 		<h3>ITEM PESANAN</h3>
 		<p><span class="order_detail_item_pesanan"></span></p>
@@ -1143,10 +1164,17 @@
     <div role="main" class="ui-content">
 		
 		<center><img src="img/logo.png" width="100%"/></center><h4 class="ui-bar ui-bar-b info-login-status" ></h4>
+		<h4>Info</h4>
+		<textarea id="info_informasi"  style="min-height:100px;width:100%" data-role="none" readonly>
 		
+		</textarea><br/>
+		
+		<h4>Kontak</h4>
 		<textarea id="info_kontak"  style="min-height:100px;width:100%" data-role="none" readonly>
 		
 		</textarea><br/>
+		
+		<h4>Rekening</h4>
 		<textarea id="info_rekening"  style="min-height:100px;width:100%" data-role="none" readonly>
 		
 		</textarea>
@@ -1166,13 +1194,46 @@
 
 
 <!-- SETTINGS -->
-<div data-role="page" data-control-title="Cart" id="page_settings" >
+<div data-role="page" data-control-title="Pengaturan" id="page_settings" >
+	
+    <div data-theme="b" data-role="header">
+       <div data-role="navbar">
+			<ul>
+
+			<li><a href="#" class="ui-btn ui-icon-home ui-btn-a ui-btn-icon-top">Pengaturan</a></li>
+				
+			</ul>
+		</div><!-- /navbar -->
+    </div>
+    <div role="main" class="ui-content">
+		
+		<center><img src="img/logo.png" width="100%"/></center><h4 class="ui-bar ui-bar-b info-login-status" ></h4>
+		<h3>Data Pesanan</h3>
+		
+      	 <ul data-role="listview" data-inset="true">
+		   <li><a href="#" class="menu_page_setting show-page-loading-msg" rel="1" title="Edit Profile">Edit Profile</a></li>
+		   <li><a href="#" class="menu_page_logout show-page-loading-msg" rel="1"  title="Logout">Logout</a></li>
+		</ul>
+    </div>
+	
+	 <div data-theme="b" data-role="footer" class="footer">
+       <div data-role="navbar">
+			<ul>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-top show-page-loading-msg check_new_message" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Back</a></li>
+				
+			</ul>
+		</div><!-- /navbar -->
+    </div>
+</div>
+
+<!-- SETTING PROFILE -->
+<div data-role="page" data-control-title="Pengaturan profile" id="page_settings_profile" >
 
     <div data-theme="b" data-role="header">
        <div data-role="navbar">
 			<ul>
 				
-				<li><a href="#" class="ui-btn ui-icon-home ui-btn-a ui-btn-icon-top">Settings</a></li>
+				<li><a href="#" class="ui-btn ui-icon-home ui-btn-a ui-btn-icon-top">Pengaturan Profil</a></li>
 				
 			</ul>
 		</div><!-- /navbar -->
@@ -1195,7 +1256,8 @@
 			<input name="update_email" id="update_email" value="" type="text">
 			<label for="update_phone">Handphone:</label>
 			<input name="update_phone" id="update_phone" value="" type="text">
-			
+			<label for="update_pinbb">PIN BB:</label>
+			<input name="update_pinbb" id="update_pinbb" value="" type="text">
 			<label for="update_alamat">Alamat:</label>
 			<textarea name="update_alamat" id="update_alamat" ></textarea>
 			
@@ -1215,13 +1277,13 @@
 		<div data-role="navbar" data-iconpos="top">
             <ul>			
                 <li>
-                    <a href="#page_dashboard" data-transition="fade" data-theme="a" data-icon="">
+                    <a href="#page_settings" data-transition="fade" data-theme="a" data-icon="">
                         Cancel
                     </a>
                 </li>
                 
 				 <li>
-                    <button type="button" class="btn_update_setting" data-transition="fade" data-theme="b" data-icon="">
+                    <button type="button" class="btn_update_setting show-page-loading-msg"  data-theme="b" data-icon="">
                       Update
                     </button>
                 </li>

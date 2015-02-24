@@ -1,12 +1,12 @@
 
-	var shop_name = "BINJUW"; // NAMA TOKO ONLINE
-	var domain = "http://bin-juw.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Pusat Online Baju Termurah"; // NAMA TOKO ONLINE
+	var domain = "http://pobt1.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/BINJUW"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "f1e739c830cff3f3a4d075ea6fa250c3"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/pobt1"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "4cb21675e896a38fb288dac8bb716f3a"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
