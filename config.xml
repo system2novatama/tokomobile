@@ -3,10 +3,10 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id = "com.tokomobile.epic"
-	version = "1.0.0">
+	version = "2.0.0">
 	<name>EPIC</name>
 	<description>
-	EPIC by Novatama Infomedia.
+	Tokomobile 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile
