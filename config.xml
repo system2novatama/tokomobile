@@ -2,11 +2,11 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.lolipolly"
+	id = "com.tokomobile.f2fashion"
 	version = "1.0.0">
-	<name>LOLIPOLLY</name>
+	<name>F2 Fashion</name>
 	<description>
-	LOLIPOLLY by Novatama Infomedia.
+	F2 Fashion by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Tokomobile
