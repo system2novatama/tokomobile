@@ -1,12 +1,12 @@
 
-	var shop_name = "SeN Fashion"; // NAMA TOKO ONLINE
-	var domain = "http://senfashionladies.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Giselle Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://gisellefashion.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/senfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "39a3d0561e5ea2ee1c9bfc838ebd97cc"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/GiselleFashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "45b2e781c32d18cf713beb2d70030b53"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
