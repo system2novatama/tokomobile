@@ -1,12 +1,12 @@
 
-	var shop_name = "Thiors OLS"; // NAMA TOKO ONLINE
-	var domain = "http://thiors-ols.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "SeN Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://senfashionladies.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/thios"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "f7ef7d8852909950e24f0c1d78210074"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/senfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "39a3d0561e5ea2ee1c9bfc838ebd97cc"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
@@ -89,11 +89,13 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
+				
 				else
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
 				}
+				
 				else
 				{
 					var customer_id = login_customer_id;
@@ -163,6 +165,13 @@ var cart_item_id = new Array();
 		return false;		
 	}
 	
+	function check_status_member_not_found()
+	{
+		$("#login_message").html("<div class='alert-error'>Member Not Found</div>");
+		window.location = "#page_login";
+		return false;		
+	}
+	
 	// LOGIN 
 	$( document ).on( "submit", "#form_login", function() {
 
@@ -185,10 +194,15 @@ var cart_item_id = new Array();
 				check_status_aplikasi(data.message);
 			}
 			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
 			}
+			
 			/* end check */ 			
 			
 			if(data.status == 'Failed')
@@ -238,7 +252,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data_prov.message);
 					}
-					
+					if(data_prov.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data_prov.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -257,6 +274,8 @@ var cart_item_id = new Array();
 	});	
 	
 	$( document ).on( "change", "#register_provinsi", function() {
+	
+		$.mobile.loading( "show" );
 	
 		var prov_id = $(this).val();
 		
@@ -277,7 +296,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data_city.message);
 					}
-					
+					if(data_city.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data_city.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -293,6 +315,8 @@ var cart_item_id = new Array();
 						var x = "<option value='"+listing_city[a].id+"'>"+listing_city[a].nama+"</option>";
 						$("#register_kota").append(x);
 					}
+					
+					$.mobile.loading( "hide" );
 
 			}, "json");
 		
@@ -301,6 +325,7 @@ var cart_item_id = new Array();
 		{
 			$("#register_kota").attr("disabled","disabled");
 			$("#register_kota").html("<option value=''>- PILIH KOTA -</option>");
+			$.mobile.loading( "hide" );
 		}
 	});	
 	
@@ -328,7 +353,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data_prov.message);
 					}
-					
+					if(data_prov.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data_prov.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -377,7 +405,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -425,7 +456,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -489,7 +523,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -568,7 +605,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -624,121 +664,353 @@ var cart_item_id = new Array();
 
 	// ACTION LIST PRODUCT FROM MENU DASHBOARD
 	// Ready
-	$(document).on('pageinit',function(event){
-		$( document ).on( "click", ".menu_page_product", function() {
+	
+	$( document ).on( "click", ".menu_page_product", function() {
+		
+		$("#product_notif").html("");
+		
+		var customer_id = $(".customer_id").html();
+		var category = $(this).attr("title");
+		 
+		var page = $(this).attr("rel");
+		var page = parseInt(page);
+		var prev_page = page - 1;
+		var next_page = page + 1;
+
+			$.post(base_url+"/get_list_product", {token: token, tipe: 'Ready Stock', page: page, category: category, customer_id: customer_id},
+			   function(data){
+
+				/* check */
+				if(data.status == 'Invalid Token')
+				{
+					check_token();
+				}
 			
-			var customer_id = $(".customer_id").html();
-			var category = $(this).attr("title");
-			 
-			var page = $(this).attr("rel");
-			var page = parseInt(page);
-			var prev_page = page - 1;
-			var next_page = page + 1;
-
-				$.post(base_url+"/get_list_product", {token: token, tipe: 'Ready Stock', page: page, category: category, customer_id: customer_id},
-				   function(data){
-
-					/* check */
-					if(data.status == 'Invalid Token')
-					{
-						check_token();
-					}
-				
-					if(data.status == 'OFF')
-					{
-						check_status_aplikasi(data.message);
-					}
+				if(data.status == 'OFF')
+				{
+					check_status_aplikasi(data.message);
+				}
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
+				if(data.status == 'Member Not Active')
+				{
+					check_status_member();
+				}
+				/* end check */ 
+			   
+				if(data.status == 'Not_found')
+				{
+					$("#product_notif").html("<center>Data tidak ada</center>");
+					$(".product_detail_list").hide();	
+					$("#page_product_current").html("1");
 					
-					if(data.status == 'Member Not Active')
-					{
-						check_status_member();
-					}
-					/* end check */ 
-				   
-					if(data.status == 'Not_found')
-					{
-						$("#product_notif").html("<center>Data tidak ada</center>");
-						$(".product_detail_list").hide();	
-						$("#page_product_current").html("1");
+					window.location = "#page_product";
+					
+				}
+				else	
+				if(data.status == 'Success')
+				{
+					var item = data.product;
+					var item_length = item.length;
+					$("#product_notif").html("");
+					for(var i = 0; i < 20; i++)  
+					{	
 						
-						window.location = "#page_product";
+						var listing = "#list_product #list_"+i;
 						
-					}
-					else	
-					if(data.status == 'Success')
-					{
-						var item = data.product;
-						var item_length = item.length;
-						$("#product_notif").html("");
-						for(var i = 0; i < 20; i++)  
+						if(i < item_length)
 						{	
+							$(listing).show();
+							$(listing+" img").attr("src",item[i].img_thumbnail); 
+							$(listing+" h2").html(item[i].name_item);
 							
-							var listing = "#list_product #list_"+i;
+							var item_harga_lama = parseFloat(item[i].harga_lama);
 							
-							if(i < item_length)
-							{	
-								$(listing).show();
-								$(listing+" img").attr("src",item[i].img_thumbnail); 
-								$(listing+" h2").html(item[i].name_item);
+							if(item_harga_lama > 0)
+							{
+								var harga_lama = numeral(item_harga_lama).format('0.00');
+								var harga = numeral(item[i].harga).format('0.00');
+								$(listing+" p").html("<strike><font color='red'>Rp."+harga_lama+"</font></strike> Rp."+harga);
 								
-								var item_harga_lama = parseFloat(item[i].harga_lama);
-								
-								if(item_harga_lama > 0)
-								{
-									var harga_lama = numeral(item_harga_lama).format('0.00');
-									var harga = numeral(item[i].harga).format('0.00');
-									$(listing+" p").html("<strike><font color='red'>Rp."+harga_lama+"</font></strike> Rp."+harga);
-									
-								}
-								else
-								{
-									var harga = numeral(item[i].harga).format('0.00');
-									$(listing+" p").html("Rp."+harga);
-								}	
-								
-								$(listing+" a").attr("rel",item[i].product_id);
 							}
 							else
 							{
-								$(listing).hide();
-							}
+								var harga = numeral(item[i].harga).format('0.00');
+								$(listing+" p").html("Rp."+harga);
+							}	
+							
+							$(listing+" a").attr("rel",item[i].product_id);
 						}
-						
-						$("#info_page_product").html(page);
-						$("#info_total_page_product").html(data.total_page);
-						
-						$("#page_product_prev").attr("rel",prev_page);
-						$("#page_product_prev").attr("title",category);
-						$("#page_product_current").html(page);
-						$("#page_product_next").attr("rel",next_page);
-						$("#page_product_next").attr("title",category);
-						
-						$("#refresh_product").attr("rel",1);
-						$("#refresh_product").attr("title",category);
-						
-						window.location = "#page_product";
-						
+						else
+						{
+							$(listing).hide();
+						}
 					}
-					else if(data.status == 'Failed')
-					{		
-						get_list_product(prev_page);
-					}	
 					
-				}, "json");
+					$("#info_page_product").html(page);
+					$("#info_total_page_product").html(data.total_page);
+					
+					$("#page_product_prev").attr("rel",prev_page);
+					$("#page_product_prev").attr("title",category);
+					$("#page_product_current").html(page);
+					$("#page_product_next").attr("rel",next_page);
+					$("#page_product_next").attr("title",category);
+					
+					$("#refresh_product").attr("rel",1);
+					$("#refresh_product").attr("title",category);
+					
+					window.location = "#page_product";
+					
+				}
+				else if(data.status == 'Failed')
+				{		
+					get_list_product(prev_page);
+				}	
 				
-				$.mobile.loading( "hide" );
-		
-		});
+			}, "json");
+			
+			$.mobile.loading( "hide" );
+	
 	});
 	
+	
+	// Ready (function)
+	function get_list_product_ready(category_id)
+	{
+		$("#product_notif").html("");
+		
+		var customer_id = $(".customer_id").html();
+		var category = category_id;
+		 
+		var page = 1;
+		var page = parseInt(page);
+		var prev_page = page - 1;
+		var next_page = page + 1;
+
+			$.post(base_url+"/get_list_product", {token: token, tipe: 'Ready Stock', page: page, category: category, customer_id: customer_id},
+			   function(data){
+
+				/* check */
+				if(data.status == 'Invalid Token')
+				{
+					check_token();
+				}
+			
+				if(data.status == 'OFF')
+				{
+					check_status_aplikasi(data.message);
+				}
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
+				if(data.status == 'Member Not Active')
+				{
+					check_status_member();
+				}
+				/* end check */ 
+			   
+				if(data.status == 'Not_found')
+				{
+					$("#product_notif").html("<center>Data tidak ada</center>");
+					$(".product_detail_list").hide();	
+					$("#page_product_current").html("1");
+					
+					window.location = "#page_product";
+					
+				}
+				else	
+				if(data.status == 'Success')
+				{
+					var item = data.product;
+					var item_length = item.length;
+					$("#product_notif").html("");
+					for(var i = 0; i < 20; i++)  
+					{	
+						
+						var listing = "#list_product #list_"+i;
+						
+						if(i < item_length)
+						{	
+							$(listing).show();
+							$(listing+" img").attr("src",item[i].img_thumbnail); 
+							$(listing+" h2").html(item[i].name_item);
+							
+							var item_harga_lama = parseFloat(item[i].harga_lama);
+							
+							if(item_harga_lama > 0)
+							{
+								var harga_lama = numeral(item_harga_lama).format('0.00');
+								var harga = numeral(item[i].harga).format('0.00');
+								$(listing+" p").html("<strike><font color='red'>Rp."+harga_lama+"</font></strike> Rp."+harga);
+								
+							}
+							else
+							{
+								var harga = numeral(item[i].harga).format('0.00');
+								$(listing+" p").html("Rp."+harga);
+							}	
+							
+							$(listing+" a").attr("rel",item[i].product_id);
+						}
+						else
+						{
+							$(listing).hide();
+						}
+					}
+					
+					$("#info_page_product").html(page);
+					$("#info_total_page_product").html(data.total_page);
+					
+					$("#page_product_prev").attr("rel",prev_page);
+					$("#page_product_prev").attr("title",category);
+					$("#page_product_current").html(page);
+					$("#page_product_next").attr("rel",next_page);
+					$("#page_product_next").attr("title",category);
+					
+					$("#refresh_product").attr("rel",1);
+					$("#refresh_product").attr("title",category);
+					
+					window.location = "#page_product";
+					
+				}
+				else if(data.status == 'Failed')
+				{		
+					get_list_product(prev_page);
+				}	
+				
+			}, "json");
+			
+			$.mobile.loading( "hide" );
+	}
+	
 	//PO
-	$(document).on('pageinit',function(event){
-		$( document ).on( "click", ".menu_page_product_po", function() {
+	
+	$( document ).on( "click", ".menu_page_product_po", function() {
+		
+		$("#product_po_notif").html("");
+		
+		var customer_id = $(".customer_id").html();
+		var category = $(this).attr("title");
+		 
+		var page = $(this).attr("rel");
+		var page = parseInt(page);
+		var prev_page = page - 1;
+		var next_page = page + 1;
+
+			$.post(base_url+"/get_list_product", {token: token, tipe: 'PO', page: page, category: category, customer_id: customer_id},
+			   function(data){
+				
+				/* check */
+				if(data.status == 'Invalid Token')
+				{
+					check_token();
+				}
+			
+				if(data.status == 'OFF')
+				{
+					check_status_aplikasi(data.message);
+				}
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
+				if(data.status == 'Member Not Active')
+				{
+					check_status_member();
+				}
+				/* end check */ 
+				
+				if(data.status == 'Not_found')
+				{
+					$("#product_po_notif").html("<center>Data tidak ada</center>");
+					$(".product_detail_list").hide();	
+					$("#page_product_current").html("1");
+					
+					window.location = "#page_product_po";
+					
+				}
+				else	
+				
+			   if(data.status == 'Success')
+			   {
+					var item = data.product;
+					var item_length = item.length;
+					$("#product_notif").html("");
+					for(var i = 0; i < 20; i++)  
+					{	
+						
+						var listing = "#list_product #list_"+i;
+						
+						if(i < item_length)
+						{	
+							$(listing).show();
+							$(listing+" img").attr("src",item[i].img_thumbnail); 
+							$(listing+" h2").html(item[i].name_item);
+							
+							var item_harga_lama = parseFloat(item[i].harga_lama);
+							
+							if(item_harga_lama > 0)
+							{
+								var harga_lama = numeral(item_harga_lama).format('0.00');
+								var harga = numeral(item[i].harga).format('0.00');
+								$(listing+" p").html("<strike><font color='red'>Rp."+harga_lama+"</font></strike> Rp."+harga);
+								
+							}
+							else
+							{
+								var harga = numeral(item[i].harga).format('0.00');
+								$(listing+" p").html("Rp."+harga);
+							}	
+							
+							$(listing+" a").attr("rel",item[i].product_id);
+						}
+						else
+						{
+							$(listing).hide();
+						}
+					}
+					
+					$("#info_page_product_po").html(page);
+					$("#info_total_page_product_po").html(data.total_page);
+					
+					$("#page_product_prev_po").attr("rel",prev_page);
+					$("#page_product_prev_po").attr("title",category);
+					$("#page_product_current_po").html(page);
+					$("#page_product_next_po").attr("rel",next_page);
+					$("#page_product_next_po").attr("title",category);
+					
+					$("#refresh_product_po").attr("rel",1);
+					$("#refresh_product_po").attr("title",category);
+					
+					window.location = "#page_product_po";
+					
+				}
+				else if(data.status == 'Failed')
+				{		
+					get_list_product(prev_page);
+				}	
+				
+				
+			}, "json");
+			
+			$.mobile.loading( "hide" );
+	
+	});
+	
+
+	
+	// PO (function)
+	function get_list_product_po(category_id)
+	{
+			$("#product_po_notif").html("");
 			
 			var customer_id = $(".customer_id").html();
-			var category = $(this).attr("title");
+			var category = category_id;
 			 
-			var page = $(this).attr("rel");
+			var page = 1;
 			var page = parseInt(page);
 			var prev_page = page - 1;
 			var next_page = page + 1;
@@ -756,7 +1028,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -837,10 +1112,8 @@ var cart_item_id = new Array();
 				}, "json");
 				
 				$.mobile.loading( "hide" );
-		
-		});
-	});
-
+	}
+	
 	// SEARCH PRODUCT READY STOCK
 	$( document ).on( "submit", "#form_search", function() {
 	
@@ -867,7 +1140,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -966,7 +1242,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -1056,7 +1335,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -1083,9 +1365,23 @@ var cart_item_id = new Array();
 					}
 					else
 					{
-						if(data.view_stock == 1)
+						if((data.view_stock == 1) || (data.view_stock == 2))
 						{
-							$("#select-variant").append("<option value='"+variants[i].id_variant+"'>"+variants[i].variant_name+" ("+variants[i].stock+")</option>");
+							if(data.view_stock ==1)
+							{			
+								$("#select-variant").append("<option value='"+variants[i].id_variant+"'>"+variants[i].variant_name+" ("+variants[i].stock+")</option>");
+							}
+							else
+							{
+								if(variants[i].stock == 'HABIS')
+								{
+									$("#select-variant").append("<option value='"+variants[i].id_variant+"'>"+variants[i].variant_name+" ("+variants[i].stock+")</option>");		
+								}
+								else
+								{
+									$("#select-variant").append("<option value='"+variants[i].id_variant+"'>"+variants[i].variant_name+"</option>");
+								}
+							}	
 						}
 						else
 						{
@@ -1110,6 +1406,7 @@ var cart_item_id = new Array();
 			
 			// Placing variable to item 
 			$("#item_id").val(data.product_id);
+			$("#item_category").val(data.category_id);
 			$("#item_name").val(data.name_item);
 			$("#item_price").val(data.harga);
 			$("#item_ukuran").val(data.ukuran);
@@ -1157,7 +1454,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -1177,12 +1477,14 @@ var cart_item_id = new Array();
 
 		var customer_id = $(".customer_id").html();
 		var order_prod_id = $("#item_id").val();
+		var order_category_id = $("#item_category").val();
 		var order_variant_id = $("#select-variant").val();
 		var order_qty = $("#item_qty").val();
 		var order_price = $("#item_price").val();
 		var order_ukuran = $("#item_ukuran").val();
 		var order_notes = $("#item_notes").val();
 		var min_order = $("#item_min_order").val();
+		var order_category = $("#item_category");
 		
 		// alert(customer_id+"<br/>"+order_prod_id+"<br/>"+order_color_id+"<br/>"+order_qty+"<br/>"+order_price);
 		
@@ -1209,7 +1511,10 @@ var cart_item_id = new Array();
 						{
 							check_status_aplikasi(data.message);
 						}
-						
+						if(data.status == 'Member Not Found')
+						{
+							check_status_member_not_found();
+						}
 						if(data.status == 'Member Not Active')
 						{
 							check_status_member();
@@ -1220,17 +1525,19 @@ var cart_item_id = new Array();
 						{
 							if(data.product_type == 'Ready Stock')
 							{
-								window.location = "#page_product";
+								alert("Produk telah dipesan");
+								get_list_product_ready(order_category_id);
 							}
 							else
 							{
-								window.location = "#page_product_po";
+								alert("Produk telah dipesan");
+								get_list_product_po(order_category_id);
 							}
-							alert("Produk telah dipesan");
+							
 						}
 						else
 						{
-							alert("Tidak dapat memesan produk Varian ini");
+							alert(data.message);
 							$.mobile.loading( "hide" );
 						}
 						
@@ -1283,7 +1590,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -1340,7 +1650,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -1407,7 +1720,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data_customer.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data_customer.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -1458,8 +1774,11 @@ var cart_item_id = new Array();
 						$("#dropship1_weight").val(data_item.total_weight);
 						
 						$("#dropship1_provinsi").html("<option value='"+data_customer.prov_id+"'>"+data_customer.prov+"</option>");
-						$("#dropship1_to").val(data_customer.address);
+						$("#dropship1_to").val(data_customer.name);
+						$("#dropship1_address").val(data_customer.address);
 						$("#dropship1_kota").html("<option value='"+data_customer.kota_id+"'>"+data_customer.kota+"</option>");
+						$("#dropship1_phone").val(data_customer.phone);
+						$("#dropship1_kodepos").val(data_customer.postcode);
 						
 						// GET SHIP RATES 
 						 $.post(base_url+"/get_ship_rates_cost",{token: token, kota_id: data_customer.kota_id},
@@ -1534,7 +1853,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -1581,7 +1903,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data_prov.message);
 					}
-					
+					if(data_prov.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data_prov.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -1613,6 +1938,8 @@ var cart_item_id = new Array();
 	
 	$( document ).on( "change", "#dropship2_provinsi", function() {
 	
+		$.mobile.loading( "show" );
+		
 		var customer_id = $(".customer_id").html();
 		var prov_id = $(this).val();
 		
@@ -1637,7 +1964,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data_city.message);
 				}
-				
+				if(data_city.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data_city.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -1653,7 +1983,9 @@ var cart_item_id = new Array();
 						var x = "<option value='"+listing_city[a].id+"'>"+listing_city[a].nama+"</option>";
 						$("#dropship2_kota").append(x);
 					}
-
+					
+					$.mobile.loading( "hide" );
+					
 			}, "json");
 		
 		}
@@ -1661,6 +1993,8 @@ var cart_item_id = new Array();
 		{
 			$("#dropship2_kota").attr("disabled","disabled");
 			$("#dropship2_kota").html("<option value=''>- PILIH KOTA -</option>");
+			
+			$.mobile.loading( "hide" );
 		}
 	});	
 	
@@ -1685,7 +2019,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data_cost.message);
 				}
-				
+				if(data_cost.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data_cost.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -1721,6 +2058,9 @@ var cart_item_id = new Array();
 		var customer_id = $(".customer_id").html();
 		var dropship_from = $("#dropship1_from").val();
 		var dropship_to = $("#dropship1_to").val();
+		var dropship_address = $("#dropship1_address").val();
+		var dropship_phone = $("#dropship1_phone").val();
+		var dropship_kodepos = $("#dropship1_kodepos").val();
 		var dropship_prov = $("#dropship1_provinsi").val();
 		var dropship_kota = $("#dropship1_kota").val();
 		var dropship_weight = $("#dropship1_weight").val();
@@ -1765,7 +2105,7 @@ var cart_item_id = new Array();
 		else
 		{
 		
-			$.post(base_url+"/process_dropship", {token: token, customer_id: customer_id,from: dropship_from ,to: dropship_to, prov_id: dropship_prov, kota_id: dropship_kota , ongkir: dropship_ongkir, total: dropship_total_all, weight: dropship_weight, order_item_id:  post_list_dropship},
+			$.post(base_url+"/process_dropship", {token: token, customer_id: customer_id,from: dropship_from ,to: dropship_to, prov_id: dropship_prov, kota_id: dropship_kota, address_recipient: dropship_address, phone_recipient:dropship_phone , postal_code:dropship_kodepos, ongkir: dropship_ongkir, total: dropship_total_all, weight: dropship_weight, order_item_id:  post_list_dropship},
 			   function(data){
 			   
 			   /* check */
@@ -1778,7 +2118,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -1805,6 +2148,9 @@ var cart_item_id = new Array();
 		var customer_id = $(".customer_id").html();
 		var dropship_from = $("#dropship2_from").val();
 		var dropship_to = $("#dropship2_to").val();
+		var dropship_address = $("#dropship2_address").val();
+		var dropship_phone = $("#dropship2_phone").val();
+		var dropship_kodepos = $("#dropship2_kodepos").val();
 		var dropship_prov = $("#dropship2_provinsi").val();
 		var dropship_kota = $("#dropship2_kota").val();
 		var dropship_weight = $("#dropship2_weight").val();
@@ -1847,7 +2193,7 @@ var cart_item_id = new Array();
 		}
 		else
 		{
-			$.post(base_url+"/process_dropship", {token: token, customer_id: customer_id,from: dropship_from ,to: dropship_to, prov_id: dropship_prov, kota_id: dropship_kota , ongkir: dropship_ongkir, total: dropship_total_all, weight: dropship_weight, order_item_id:  post_list_dropship, tipe: order_tipe},
+			$.post(base_url+"/process_dropship", {token: token, customer_id: customer_id,from: dropship_from ,to: dropship_to, address_recipient: dropship_address, phone_recipient:dropship_phone, postal_code:dropship_kodepos ,prov_id: dropship_prov, kota_id: dropship_kota , ongkir: dropship_ongkir, total: dropship_total_all, weight: dropship_weight, order_item_id:  post_list_dropship, tipe: order_tipe},
 			   function(data){
 			   
 			   /* check */
@@ -1860,7 +2206,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -1905,7 +2254,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -1989,7 +2341,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -2042,7 +2397,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -2118,7 +2476,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data.message);
 				}
-				
+				if(data.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -2163,7 +2524,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -2237,7 +2601,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -2272,7 +2639,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -2308,7 +2678,10 @@ var cart_item_id = new Array();
 					{
 						check_status_aplikasi(data.message);
 					}
-					
+					if(data.status == 'Member Not Found')
+					{
+						check_status_member_not_found();
+					}
 					if(data.status == 'Member Not Active')
 					{
 						check_status_member();
@@ -2351,7 +2724,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();
@@ -2371,7 +2747,10 @@ var cart_item_id = new Array();
 				{
 					check_status_aplikasi(data_customer.message);
 				}
-				
+				if(data_customer.status == 'Member Not Found')
+				{
+					check_status_member_not_found();
+				}
 				if(data_customer.status == 'Member Not Active')
 				{
 					check_status_member();
@@ -2416,7 +2795,10 @@ var cart_item_id = new Array();
 			{
 				check_status_aplikasi(data.message);
 			}
-			
+			if(data.status == 'Member Not Found')
+			{
+				check_status_member_not_found();
+			}
 			if(data.status == 'Member Not Active')
 			{
 				check_status_member();

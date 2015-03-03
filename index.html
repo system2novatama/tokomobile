@@ -10,8 +10,9 @@
 	<link rel="stylesheet" href="themes/tokomobile.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
   
-    <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls -->
-
+    <script src="cordova.js"></script>          
+	<!-- phantom library, needed for Cordova api calls -->
+	
   <script type="text/javascript" src="jquery.min.js"></script>
   <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
   <script type="text/javascript" src="numeral.min.js"></script>
@@ -391,7 +392,7 @@
 	<div data-theme="b" data-role="footer" class="back-footer" >
        <div data-role="navbar">
 			<ul>
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-top show-page-loading-msg" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Back</a></li>	
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-top show-page-loading-msg check_new_message" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Back</a></li>	
 			</ul>
 		</div><!-- /navbar -->
     </div>
@@ -440,7 +441,7 @@
 	 <div data-theme="b" data-role="footer" class="back-footer">
        <div data-role="navbar">
 			<ul>
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-top show-page-loading-msg" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Back</a></li>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l ui-btn-icon-top show-page-loading-msg check_new_message" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Back</a></li>
 				
 			</ul>
 		</div><!-- /navbar -->
@@ -597,6 +598,7 @@
 	
 	<!-- Hidden Field -->
 	<input type="hidden" name="item_id" id="item_id" value="" />
+	<input type="hidden" name="item_category" id="item_category" value="" />
 	<input type="hidden" name="item_name" id="item_name" value="" />
 	<input type="hidden" name="item_price" id="item_price" value="" />
 	<input type="hidden" name="item_ukuran" id="item_ukuran" value="" />
@@ -748,7 +750,7 @@
 	<div data-theme="b" data-role="footer" class="back-footer">
        <div data-role="navbar">
 			<ul>
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top">Back</a></li>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top check_new_message">Back</a></li>
 				
 			</ul>
 		</div><!-- /navbar -->
@@ -794,12 +796,20 @@
 		<textarea id="dropship1_from" readonly ></textarea>
 		TO <br/>
 		<textarea  id="dropship1_to" readonly ></textarea>
+		
+		ALAMAT<br/>
+		<textarea id="dropship1_address" style="min-height:100px;width:100%" data-role="none" readonly ></textarea>
+		TELEPON PENERIMA <br/>
+		<input type="text" id="dropship1_phone" value="" readonly />
+		KODEPOS <br/>
+		<input type="text" id="dropship1_kodepos" value="" readonly  /><br/>
+		
 		PROVINSI<br/>
 		<select name="dropship1_provinsi" id="dropship1_provinsi" data-role="none" readonly>
 			
 		</select><br/><br/>
 		KOTA<br/>
-		<select name="dropship1_kota" id="dropship1_kota" data-role="none" readonly>
+		<select name="dropship1_kota" id="dropship1_kota" data-role="none" readonly> 
 			
 		</select>
 		<hr/>
@@ -858,6 +868,15 @@
 		<textarea id="dropship2_from"></textarea>
 		TO <br/>
 		<textarea  id="dropship2_to"></textarea>
+		
+		ALAMAT<br/>
+		<textarea id="dropship2_address" style="min-height:100px;width:100%" data-role="none"  ></textarea>
+		TELEPON PENERIMA <br/>
+		<input type="text" id="dropship2_phone" value="" />
+		KODEPOS <br/>
+		<input type="text" id="dropship2_kodepos" value="" /><br/>
+		
+		
 		PROVINSI<br/>
 		<select name="dropship2_provinsi" id="dropship2_provinsi" data-role="none">
 			<option value="">- PILIH PROVINSI -</option>
@@ -1079,7 +1098,7 @@
 	<div data-theme="b" data-role="footer" class="back-footer">
        <div data-role="navbar">
 			<ul>
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top">Back</a></li>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top check_new_message">Back</a></li>
 				
 				
 			</ul>
@@ -1209,7 +1228,7 @@
        <div data-role="navbar">
 			<ul>
 				
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top">Back</a></li>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top check_new_message">Back</a></li>
 				
 			</ul>
 		</div><!-- /navbar -->
@@ -1319,7 +1338,7 @@
 	<div data-theme="b" data-role="footer" class="back-footer">
        <div data-role="navbar">
 			<ul>
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top">Back</a></li>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top check_new_message">Back</a></li>
 			
 			</ul>
 		</div><!-- /navbar -->
@@ -1353,7 +1372,7 @@
        <div data-role="navbar">
 			<ul>
 				
-				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top">Back</a></li>
+				<li><a href="#page_dashboard" class="ui-btn ui-btn-b ui-icon-arrow-l  ui-btn-icon-top check_new_message">Back</a></li>
 				
 			</ul>
 		</div><!-- /navbar -->
