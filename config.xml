@@ -4,12 +4,12 @@
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id = "com.tokomobile.senfashion"
 	version = "2.0.0">
-	<name>Tokomobile 2.0</name>
+	<name>SeN Fashion 2.0</name>
 	<description>
-	Tokomobile 2.0 by Novatama Infomedia.
+	SeN Fashion 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Tokomobile
+	SeN Fashion
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
