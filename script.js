@@ -1,12 +1,12 @@
 
-	var shop_name = "Thiors OLS"; // NAMA TOKO ONLINE
-	var domain = "http://thiors-ols.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Kusuma Grosir"; // NAMA TOKO ONLINE
+	var domain = "http://kusumagrosir.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/thios"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "f7ef7d8852909950e24f0c1d78210074"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/kusumagrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "47b8c837f49a5e84f804d6d8b875ffaa"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
