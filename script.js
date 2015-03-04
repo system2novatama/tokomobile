@@ -1,12 +1,12 @@
 
-	var shop_name = "Beryl Diva"; // NAMA TOKO ONLINE
-	var domain = "http://olshopapp.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "EPIC"; // NAMA TOKO ONLINE
+	var domain = "http://epicfashion.id/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/olshopap"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "418e25f48f37a3dc2528a42b8830e5f0"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/EPIC"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "f5d17c6f4182a8690d3277680e3ee32d"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
