@@ -1,12 +1,12 @@
 
-	var shop_name = "Clarisshop 789"; // NAMA TOKO ONLINE
-	var domain = "http://clarisshop789.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Giselle Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://gisellefashion.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Clarisshop789"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "f77285dbee15280e97aa2274e9f9164e"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/GiselleFashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "45b2e781c32d18cf713beb2d70030b53"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
