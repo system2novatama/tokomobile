@@ -1,12 +1,12 @@
 
-	var shop_name = "OKIK OS"; // NAMA TOKO ONLINE
-	var domain = "http://okikos.net/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Khloes Room"; // NAMA TOKO ONLINE
+	var domain = "http://khloesroom.net/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/okikos"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "22c11046accd5293755f08c7adb8ae3c"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/KhloesRoom"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "99207f4ea4747c22df5406a9245a764c"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
