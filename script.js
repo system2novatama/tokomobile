@@ -1,12 +1,12 @@
 
-	var shop_name = "Gelarez Shop"; // NAMA TOKO ONLINE
-	var domain = "http://gelarezshop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Khloes Room"; // NAMA TOKO ONLINE
+	var domain = "http://khloesroom.net/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/gelarezshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "83dd0ddcea8668d77b2eb7d382efc6dd"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/KhloesRoom"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "99207f4ea4747c22df5406a9245a764c"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
