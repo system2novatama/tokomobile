@@ -1,12 +1,12 @@
 
-	var shop_name = "SUFA GROSIR"; // NAMA TOKO ONLINE
-	var domain = "http://sufa-grosir.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Cinta Ferina"; // NAMA TOKO ONLINE
+	var domain = "http://cintaferina.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/SUFAGROSIR"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "fddb93ef25498ba6dc345d407138779e"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/CintaFerina"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "cd4afad9f6df5a73045719a2a3b636ba"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
