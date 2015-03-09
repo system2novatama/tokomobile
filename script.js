@@ -1,12 +1,12 @@
 
-	var shop_name = "Foxstyle"; // NAMA TOKO ONLINE
-	var domain = "http://foxstyles.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Moonpinkshop"; // NAMA TOKO ONLINE
+	var domain = "http://moonpinkshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Foxstyle"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "a77d72b5c411c669458dc384b2bd998d"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/moonpinkshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "0cbb8222e82759eefb65308238d4cb0c"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
