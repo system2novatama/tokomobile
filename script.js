@@ -1,12 +1,12 @@
 
-	var shop_name = "SeN Fashion"; // NAMA TOKO ONLINE
-	var domain = "http://senfashionladies.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Jenny House"; // NAMA TOKO ONLINE
+	var domain = "http://jenyhouse.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/senfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "39a3d0561e5ea2ee1c9bfc838ebd97cc"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/JennyHouse"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "08ee013352a52b4960d2bc7b61f57fa0"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
