@@ -1,12 +1,12 @@
 
-	var shop_name = "Giselle Fashion"; // NAMA TOKO ONLINE
-	var domain = "http://gisellefashion.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Foxstyle"; // NAMA TOKO ONLINE
+	var domain = "http://foxstyles.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/GiselleFashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "45b2e781c32d18cf713beb2d70030b53"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Foxstyle"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "a77d72b5c411c669458dc384b2bd998d"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
