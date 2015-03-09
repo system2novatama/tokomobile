@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.jennyhouse"
+	id = "com.tokomobile.gisellefashion"
 	version = "2.0.0">
-	<name>Jenny House</name>
+	<name>Giselle Fashion</name>
 	<description>
-	Jenny House 2.0 by Novatama Infomedia.
+	Giselle Fashion 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Jenny House
+	Giselle Fashion
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
