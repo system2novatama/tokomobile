@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.f2fashion"
+	id = "com.tokomobile.mimiponishop"
 	version = "2.0.0">
-	<name>F2 Fashion</name>
+	<name>Mimiponishop</name>
 	<description>
-	F2 Fashion 2.0 by Novatama Infomedia.
+	Mimiponishop 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	F2 Fashion
+	Mimiponishop
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the

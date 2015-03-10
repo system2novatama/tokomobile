@@ -1,12 +1,12 @@
 
-	var shop_name = "F2 Fashion"; // NAMA TOKO ONLINE
-	var domain = "http://f2-fashion.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Mimiponishop"; // NAMA TOKO ONLINE
+	var domain = "http://mimiponishop.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/f2fashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "0f264b0f53d7835095c9a29e036d964e"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Mimiponishop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "f363815e9ccce06ccbbac332ca1df426"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
