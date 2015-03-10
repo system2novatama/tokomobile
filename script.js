@@ -1,12 +1,12 @@
 
-	var shop_name = "Chloe Collection"; // NAMA TOKO ONLINE
-	var domain = "http://chloe-collection.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "ndloven group"; // NAMA TOKO ONLINE
+	var domain = "http://ndlovengroup.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ChloeCollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "acb05138606745ab09b3a027753f0744"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/ndlovengroup"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "69340fc9b87a97002584c2ccab12418e"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
