@@ -1,12 +1,12 @@
 
-	var shop_name = "Dekasun"; // NAMA TOKO ONLINE
-	var domain = "http://dekasun.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "PRB"; // NAMA TOKO ONLINE
+	var domain = "http://prb-shop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Dekasun"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "04d6d8b152c8edaa82f8abdef47737e8"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/PRB"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "0ae34d0e05f7679cc2960311916ab2dc"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
