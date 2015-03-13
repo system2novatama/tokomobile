@@ -1,12 +1,12 @@
 
-	var shop_name = "PRB"; // NAMA TOKO ONLINE
-	var domain = "http://prb-shop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "h-13shop"; // NAMA TOKO ONLINE
+	var domain = "http://h-13shop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/PRB"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "0ae34d0e05f7679cc2960311916ab2dc"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/h-13shop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "e0f029bf496d241fa04768b9524e9f79"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
