@@ -1,12 +1,12 @@
 
-	var shop_name = "HJ Tanah Abang"; // NAMA TOKO ONLINE
-	var domain = "http://hj-tanahabang.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Chloe Collection"; // NAMA TOKO ONLINE
+	var domain = "http://chloe-collection.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/HJTanahAbang"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "8abc1dcb804592d18991e47c917f3877"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/ChloeCollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "acb05138606745ab09b3a027753f0744"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
