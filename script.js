@@ -1,12 +1,12 @@
 
-	var shop_name = "Vendow"; // NAMA TOKO ONLINE
-	var domain = "http://vendowonlineshop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Zenbo"; // NAMA TOKO ONLINE
+	var domain = "http://zenbo.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Vendow"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "f7dd92639ed7ace8e4dbdad5f95144e2"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Zenbo"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "a0e2a273be2d471a4726593c34bd240f"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
