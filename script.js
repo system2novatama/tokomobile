@@ -1,12 +1,12 @@
 
-	var shop_name = "Toko Online Manado"; // NAMA TOKO ONLINE
-	var domain = "http://toko-online-manado.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Femme"; // NAMA TOKO ONLINE
+	var domain = "http://femmeolshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/TokoOnlineManado"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "b4e0c54934f984ee4e79e950597b0675"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Femme"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "db6d0d2b3bd5250b5a613eef059a4391"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
