@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.femme"
+	id = "com.tokomobile.wnx"
 	version = "2.0.0">
-	<name>Femme</name>
+	<name>WNX</name>
 	<description>
-	Femme 2.0 by Novatama Infomedia.
+	WNX 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Femme
+	WNX
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
