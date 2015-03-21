@@ -1,12 +1,12 @@
 
-	var shop_name = "WNX"; // NAMA TOKO ONLINE
-	var domain = "http://wnxshop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "ladywears"; // NAMA TOKO ONLINE
+	var domain = "http://ladywears.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/WNX"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "36f7c78cab9f40bedae4302051dce6a1"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/ladywears"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "f9292f5ba11c97af295457526d588409"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
