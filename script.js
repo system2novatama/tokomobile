@@ -1,12 +1,12 @@
 
-	var shop_name = "julia collection"; // NAMA TOKO ONLINE
-	var domain = "http://julia-collection.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "ATHEINA"; // NAMA TOKO ONLINE
+	var domain = "http://atheina.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/juliacollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "3a2d9c869e5802f2125b91f4393006f6"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/ATHEINA"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "7b58ce55423819037592889b7e53768f"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
