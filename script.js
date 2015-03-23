@@ -1,12 +1,12 @@
 
-	var shop_name = "ATHEINA"; // NAMA TOKO ONLINE
-	var domain = "http://atheina.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Grosir Tas Wanita"; // NAMA TOKO ONLINE
+	var domain = "http://grosir-tas-wanita.toko-mobile.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ATHEINA"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "7b58ce55423819037592889b7e53768f"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/GrosirTasWanita"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "f48b192c9aa1cc371f58f66b41ef0464"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
