@@ -1,12 +1,12 @@
 
-	var shop_name = "Owls House"; // NAMA TOKO ONLINE
-	var domain = "http://owls-house.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "LOVA LEE"; // NAMA TOKO ONLINE
+	var domain = "http://lovaleeboutique.net/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/OwlsHouse"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "56269f88b85f6fb6e3b2803f0ac09f65"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/LOVALEE"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "d56c0aab36b65fd8e60b7c22bcff18ab"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
