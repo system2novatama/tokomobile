@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.lovalee"
+	id = "com.tokomobile.sippnshop"
 	version = "2.0.0">
-	<name>LOVA LEE</name>
+	<name>Sippnshop</name>
 	<description>
-	LOVA LEE 2.0 by Novatama Infomedia.
+	Sippnshop 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	LOVA LEE
+	Sippnshop
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
