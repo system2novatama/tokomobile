@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.banucolection"
+	id = "com.tokomobile.banucollection"
 	version = "2.0.0">
-	<name>Banu colection</name>
+	<name>Banu Collection</name>
 	<description>
-	Banu colection 2.0 by Novatama Infomedia.
+	Banu Collection 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Banu colection
+	Banu Collection
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
