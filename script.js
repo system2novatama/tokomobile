@@ -1,12 +1,12 @@
 
-	var shop_name = "Banu Collection"; // NAMA TOKO ONLINE
-	var domain = "http://banucollection.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Grosir Lovely Shop"; // NAMA TOKO ONLINE
+	var domain = "http://grosirlovelyshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/BanuCollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "08df9a56f26b83d251a9e7b08be78ce0"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/GrosirLovelyShop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "0d87c8ac32a8176f26317960ea5a8be3"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();

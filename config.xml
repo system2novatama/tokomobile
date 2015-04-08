@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.banucollection"
+	id = "com.tokomobile.grosirlovelyshop"
 	version = "2.0.0">
-	<name>Banu Collection</name>
+	<name>Grosir Lovely Shop</name>
 	<description>
-	Banu Collection 2.0 by Novatama Infomedia.
+	Grosir Lovely Shop 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Banu Collection
+	Grosir Lovely Shop
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
