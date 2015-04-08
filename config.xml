@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.grosirlovelyshop"
+	id = "com.tokomobile.wnx"
 	version = "2.0.0">
-	<name>Grosir Lovely Shop</name>
+	<name>WNX</name>
 	<description>
-	Grosir Lovely Shop 2.0 by Novatama Infomedia.
+	WNX 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Grosir Lovely Shop
+	WNX
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
