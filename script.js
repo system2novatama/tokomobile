@@ -1,12 +1,12 @@
 
-	var shop_name = "Bello"; // NAMA TOKO ONLINE
-	var domain = "http://bellofashion.net/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "FIRSA"; // NAMA TOKO ONLINE
+	var domain = "http://firsa-onlineshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Bello"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "8de493c8cf14e41dc081c3494a4e2be5"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/FIRSA"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "27d0e8f2b330ca9d267c89042d63decb"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
