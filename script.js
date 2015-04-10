@@ -1,12 +1,12 @@
 
-	var shop_name = "Yutakabee"; // NAMA TOKO ONLINE
-	var domain = "http://yutakabee.net/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "PING GROSIR"; // NAMA TOKO ONLINE
+	var domain = "http://pinggrosir.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Yutakabee"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "92e12884a66082189ed49ec9d0e8eabb"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/pinggrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "1bfa6403c9fb3f4e049050b6d72bc4cd"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
