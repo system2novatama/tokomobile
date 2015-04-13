@@ -1,12 +1,12 @@
 
-	var shop_name = "Chic Boutique"; // NAMA TOKO ONLINE
-	var domain = "http://chic-boutique.web.id/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "KeykeyShop"; // NAMA TOKO ONLINE
+	var domain = "http://keykeyshop.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ChicBoutique"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "c560b479fc64143a3ba95f3f9d23c55e"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/KeykeyShop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "95ad9fb8e459d7ea02baad17f31aee50"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
