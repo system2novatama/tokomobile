@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.keykeyshop"
+	id = "com.tokomobile.owlshouse"
 	version = "2.0.0">
-	<name>KeykeyShop</name>
+	<name>Owls House</name>
 	<description>
-	KeykeyShop 2.0 by Novatama Infomedia.
+	Owls House 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	KeykeyShop
+	Owls House
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
