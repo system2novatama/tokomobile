@@ -1,11 +1,11 @@
 
-	var shop_name = "QUICLO"; // NAMA TOKO ONLINE
+	var shop_name = "Quiclo"; // NAMA TOKO ONLINE
 	var domain = "http://quiclo-collection.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/QUICLO"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var dir_image = "Pictures/Quiclo"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
 	var token = "460f411a3270d6686faec3ac228870d2"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
