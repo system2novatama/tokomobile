@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.lineshop"
+	id = "com.tokomobile.quiclo"
 	version = "2.0.0">
-	<name>Lineshop</name>
+	<name>QUICLO</name>
 	<description>
-	Lineshop 2.0 by Novatama Infomedia.
+	QUICLO 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Lineshop
+	QUICLO
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
