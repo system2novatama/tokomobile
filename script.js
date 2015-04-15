@@ -1,12 +1,12 @@
 
-	var shop_name = "Mimi Grosir"; // NAMA TOKO ONLINE
-	var domain = "http://mimi-grosir.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Calista Grosir"; // NAMA TOKO ONLINE
+	var domain = "http://calista-grosir.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/MimiGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "08d096d7de5d37745fc540e76f7cd2d6"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/CalistaGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "94bc35c782396ba8a69fcf50a0e1885d"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
