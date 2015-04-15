@@ -1,12 +1,12 @@
 
-	var shop_name = "Calista Grosir"; // NAMA TOKO ONLINE
-	var domain = "http://calista-grosir.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "TSR"; // NAMA TOKO ONLINE
+	var domain = "http://tsr-design.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/CalistaGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "94bc35c782396ba8a69fcf50a0e1885d"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/TSR"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "9113dc1b5103ead4cb2096f577ff789c"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
