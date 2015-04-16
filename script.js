@@ -1,12 +1,12 @@
 
-	var shop_name = "EL Fashion"; // NAMA TOKO ONLINE
-	var domain = "http://el-fashions.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Galeri Adella"; // NAMA TOKO ONLINE
+	var domain = "http://adellaoshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ELFashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "2663b4144750b74d8536f6262e0968bb"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/GaleriAdella"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "2cb4f392e49a301ab63454ab7844a389"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
