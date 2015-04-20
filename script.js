@@ -1,18 +1,32 @@
-
-	var shop_name = "Galeri Adella"; // NAMA TOKO ONLINE
-	var domain = "http://adellaoshop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "PGBO"; // NAMA TOKO ONLINE
+	var domain = "http://pgbo.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/GaleriAdella"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "2cb4f392e49a301ab63454ab7844a389"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/PGBO"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "4a921145231f076d5dbeccebc9d57e24"; // ISI DENGAN TOKEN 
 	
-var cart_item_id = new Array();
+	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
 	var cart_item_price = new Array();
 	var cart_item_subtotal = new Array();
 	var cart_item_weight = new Array();
+
+	var current_page = "";
+
+	$(document).on("pageshow", function (e, data) {
+	    var page = $.mobile.activePage.attr("id");
+	    current_page = page;
+	    //alert(page);
+	});
+
+	$( document ).bind( 'mobileinit', function(){
+	  $.mobile.loader.prototype.options.text = "loading";
+	  $.mobile.loader.prototype.options.textVisible = false;
+	  $.mobile.loader.prototype.options.theme = "a";
+	  $.mobile.loader.prototype.options.html = "";
+	});
 	
 	$( document ).on( "click", ".show-page-loading-msg", function() {
 		var $this = $( this ),
@@ -438,6 +452,8 @@ var cart_item_id = new Array();
 	// GET LIST PRODUCT
 	function get_list_product(page)
 	{
+
+		
 		var customer_id = $(".customer_id").html();
 		var page = parseInt(page);
 		var prev_page = page - 1;
@@ -499,7 +515,7 @@ var cart_item_id = new Array();
 
 	// ACTION LIST PRODUCT CATEGORY FROM MENU DASHBOARD
 	// Ready
-	$(document).on('pageinit',function(event){
+	//$(document).on('pageinit',function(event){
 		$( document ).on( "click", ".menu_page_product_category", function() {
 
 				var customer_id = $(".customer_id").html();
@@ -579,10 +595,10 @@ var cart_item_id = new Array();
 				}, "json");
 		
 		});
-	});
+	//});
 	
 	//PO
-	$(document).on('pageinit',function(event){
+	//$(document).on('pageinit',function(event){
 		$( document ).on( "click", ".menu_page_product_category_po", function() {
 
 				var customer_id = $(".customer_id").html();
@@ -616,14 +632,14 @@ var cart_item_id = new Array();
 					/* end check */ 
 					
 					if(data.status == 'Error')
-				   {
-						alert("No Data");
+				    {
 						$.mobile.loading( "hide" );
+						alert("No Data");
 						return false;
 					}	
 					
 					if(data.status == 'Success')
-				   {
+				    {
 						var categories = data.category;
 						var categories_length = categories.length;
 						
@@ -660,13 +676,14 @@ var cart_item_id = new Array();
 				}, "json");
 		
 		});
-	});
+	//});
 
 	// ACTION LIST PRODUCT FROM MENU DASHBOARD
 	// Ready
 	
 	$( document ).on( "click", ".menu_page_product", function() {
 		
+		$.mobile.loading( "show" );
 		$("#product_notif").html("");
 		
 		var customer_id = $(".customer_id").html();
@@ -779,6 +796,8 @@ var cart_item_id = new Array();
 	// Ready (function)
 	function get_list_product_ready(category_id)
 	{
+		$.mobile.loading( "show" );
+
 		$("#product_notif").html("");
 		
 		var customer_id = $(".customer_id").html();
@@ -1004,7 +1023,8 @@ var cart_item_id = new Array();
 	
 	// PO (function)
 	function get_list_product_po(category_id)
-	{
+	{		
+			$.mobile.loading( "show" );
 			$("#product_po_notif").html("");
 			
 			var customer_id = $(".customer_id").html();
@@ -1430,7 +1450,9 @@ var cart_item_id = new Array();
 		var file_name = $("#item_name").val();
 		var file_price = $("#item_price").val();
 		
-		download(file_img, dir_image, admin_url);
+		//download_lagi(file_img, dir_image, admin_url);
+		//download(file_img, dir_image, admin_url);
+		download_lagi2("http://tokomobile.co.id/demo/media/images/large/"+file_img);
 		
 	});
 
@@ -2842,6 +2864,84 @@ var cart_item_id = new Array();
 
 	
 	//SAVE IMAGE DETAIL
+
+	function saveImageToPhone(url, success, error) {
+	    var canvas, context, imageDataUrl, imageData;
+	    var img = new Image();
+	    img.onload = function() {
+	        canvas = document.createElement('canvas');
+	        canvas.width = img.width;
+	        canvas.height = img.height;
+	        context = canvas.getContext('2d');
+	        context.drawImage(img, 0, 0);
+	        try {
+				$.mobile.loading( "show" );
+	            imageDataUrl = canvas.toDataURL('image/jpeg', 1.0);
+	            imageData = imageDataUrl.replace(/data:image\/jpeg;base64,/, '');
+	            cordova.exec(
+	                success,
+	                error,
+	                'Canvas2ImagePlugin',
+	                'saveImageDataToLibrary',
+	                [imageData, url]
+	            );
+	        }
+	        catch(e) {
+	            error(e.message);
+	        }
+	    };
+	    try {
+	        img.src = url;
+	    }
+	    catch(e) {
+	        error(e.message);
+	    }
+	}
+
+	// SAVE IMAGE 3 //
+	function download_lagi2(url){
+		$.mobile.loading( "show" );
+
+		setTimeout(function() {
+		      // Do something after 3 seconds
+		      var success = function(msg){
+			    console.info(msg);
+			    alert('message: '          + msg);
+				$.mobile.loading( "hide" );
+			};
+
+			var error = function(err){
+			    console.error(err);
+			    alert('message: '          + err);
+				$.mobile.loading( "hide" );
+			};
+
+			saveImageToPhone(url, success, error);
+		}, 3000);
+/*
+		*/
+	}
+
+
+	// SAVE IMAGE 2 //
+	function download_lagi(file_img, Folder_Name, base_download_url) {
+		// onSuccess Callback
+		// This method accepts a JSON object, which contains the
+		// message response
+		//
+		var onSuccess = function(data) {
+		    alert('message: '          + data.message);
+		};
+
+		// onError Callback receives a json object
+		//
+		function onError(error) {
+		    alert('message: '    + error.message);
+		}
+
+		window.cordova.plugins.FileOpener.openFile("http://tokomobile.co.id/demo/media/images/large/"+file_img,onSuccess, onError);
+
+	}
 	// SAVE IMAGES //
 	function download(file_img, Folder_Name, base_download_url) {
 	//step to request a file system 
@@ -2856,9 +2956,22 @@ var cart_item_id = new Array();
 			var rootdir = fileSystem.root;
 			var fp = rootdir.toURL(); // Returns Fulpath of local directory
 
+			var root_external = "file:///storage/sdcard1/";
 			fp = fp + "/" + Folder_Name + "/" + file_img; // fullpath and name of the file which we want to give
+			alert(fp);
 			// download function call
 			filetransfer(download_link, fp);
+
+			var onSuccess = function(data) {
+		    	alert('message: '          + data.message);
+			};
+
+			// onError Callback receives a json object
+			//
+			function onError(error) {
+			    alert('message: '    + error.message);
+			}
+			//window.cordova.plugins.FileOpener.galleryAddPic(fp + "/" + Folder_Name,onSuccess, onError);
 		}
 
 		function onDirectorySuccess(parent) {
@@ -2884,12 +2997,13 @@ var cart_item_id = new Array();
 			download_link,
 			fp,
 			function(entry) {
-				alert("Gambar berhasil disimpan");
+				alert("Gambar berhasil disimpan di "+fp);
 				console.log("download complete: " + entry.toURL());
 				$.mobile.loading( "hide" );
+				//window.cordova.plugins.FileOpener.refreshGallery(fp,onSuccess, onError);
 			},
 			function(error) {
-				alert("Penyimpanan gambar gagal: Error Code = " + error.code);
+				alert("Penyimpanan gambar gagal: Error Code = "+fp+" "+ error.code);
 				console.log("download error source " + error.source);
 				console.log("download error target " + error.target);
 				console.log("upload error code" + error.code);
@@ -2904,27 +3018,43 @@ var cart_item_id = new Array();
 		);
 	}
 	// END ALTERNATIVE //
-	
+
 	// Exit 
 	function onLoad() {
-                document.addEventListener('deviceready', deviceReady, false);
-            }
+        document.addEventListener('deviceready', deviceReady, false);
+    }
 
-            function deviceReady() {
-                document.addEventListener('backbutton', backButtonCallback, false);
-            }
+    function deviceReady() {
+        document.addEventListener('backbutton', backButtonCallback, false);
+    }
 
-             function backButtonCallback() {
-				navigator.notification.confirm('Keluar dari aplikasi?',confirmCallback);
-             }
-             function confirmCallback(buttonIndex) {
-                if(buttonIndex == 1) {
-                 navigator.app.exitApp();
-            return true;
-            }
-            else {
-            return false;
-        }
-   }
+	function backButtonCallback() {
+		if(current_page=="page_dashboard"){
+	    	//navigator.app.exitApp();
+	    	var retVal = confirm("Keluar dari aplikasi?");
+		    if( retVal == true ){
+		    	navigator.app.exitApp();
+		    	return true;
+		    }else{
+		    	return false;
+		    }
+    		//navigator.notification.confirm('Keluar dari aplikasi?',confirmCallback);
+	    }else{
+	    	window.history.back(); 
+	    }
+		
+	}
+
+    function confirmCallback(buttonIndex) {
+       if(buttonIndex == 1) {
+	       	navigator.app.exitApp();
+	    	return true;
+	    }else {
+	    	return false;
+		}
+   	}
+
+
+   document.addEventListener("backbutton", onBackKeyDown, false);
 	
 	
