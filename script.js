@@ -1,11 +1,11 @@
-	var shop_name = "Qeute Online Shop"; // NAMA TOKO ONLINE
-	var domain = "http://qeuteonlineshop.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Mimi Grosir"; // NAMA TOKO ONLINE
+	var domain = "http://mimi-grosir.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/QeuteOnlineShop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "a18fd213cbc2663bc48c2a6fecebc512"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/MimiGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "08d096d7de5d37745fc540e76f7cd2d6"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
