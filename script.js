@@ -1,11 +1,11 @@
-	var shop_name = "Zaid Grosir"; // NAMA TOKO ONLINE
-	var domain = "http://zaidgrosir.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Vloc"; // NAMA TOKO ONLINE
+	var domain = "http://v-loc.net/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ZaidGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "e37912133e799ee01306b5985da4bf2c"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Vloc"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "6c7f78cc20e3ce1c91ab8e5e34533b64"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
