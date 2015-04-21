@@ -1,11 +1,11 @@
-	var shop_name = "Vloc"; // NAMA TOKO ONLINE
-	var domain = "http://v-loc.net/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Kim Baby Shop"; // NAMA TOKO ONLINE
+	var domain = "http://kimbabyshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Vloc"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "6c7f78cc20e3ce1c91ab8e5e34533b64"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/KimBabyShop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "318907a774a053206a72bdc0f197cd6a"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
