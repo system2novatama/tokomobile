@@ -1,11 +1,11 @@
-	var shop_name = "Ruko Muslimah"; // NAMA TOKO ONLINE
-	var domain = "http://rukomuslimah.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "TwentyoneshopID"; // NAMA TOKO ONLINE
+	var domain = "http://twentyonemall.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/RukoMuslimah"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "5de67d4ad81f4cbfbff3cc84aaefa846"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/TwentyoneshopID"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "1a986a371c706ac65ab0a6122fbb71a7"; // ISI DENGAN TOKEN 
 	
 	var cart_item_id = new Array();
 	var cart_item_qty = new Array();
