@@ -1,11 +1,11 @@
-	var shop_name = "Everest Happy Girl"; // NAMA TOKO ONLINE
-	var domain = "http://everest-happygirl.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Max Win"; // NAMA TOKO ONLINE
+	var domain = "http://max-wiin.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/EverestHappyGirl"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "23265a53b1c2708e86b5d218e23dcf3b"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/MaxWin"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "0b8e07d0ae15d47b5f224eb3283e7a74"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
