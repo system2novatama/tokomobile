@@ -1,11 +1,11 @@
-	var shop_name = "PGBO"; // NAMA TOKO ONLINE
-	var domain = "http://pgbo.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Mimi Grosir"; // NAMA TOKO ONLINE
+	var domain = "http://mimi-grosir.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/PGBO"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "4a921145231f076d5dbeccebc9d57e24"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/MimiGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "08d096d7de5d37745fc540e76f7cd2d6"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();

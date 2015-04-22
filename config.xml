@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.pgbo"
+	id = "com.tokomobile.mimigrosir"
 	version = "2.0.0">
-	<name>PGBO</name>
+	<name>Mimi Grosir</name>
 	<description>
-	PGBO 2.0 by Novatama Infomedia.
+	Mimi Grosir 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	PGBO
+	Mimi Grosir
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
