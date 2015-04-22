@@ -1,11 +1,11 @@
-	var shop_name = "Murmer Collection YYS"; // NAMA TOKO ONLINE
-	var domain = "http://murmercollection-yys.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Everest Happy Girl"; // NAMA TOKO ONLINE
+	var domain = "http://everest-happygirl.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/MurmerCollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "4bbaa5980606513c8904bc2d299fa5c4"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/EverestHappyGirl"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "23265a53b1c2708e86b5d218e23dcf3b"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
