@@ -1,11 +1,11 @@
-	var shop_name = "Ruko Muslimah"; // NAMA TOKO ONLINE
-	var domain = "http://rukomuslimah.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "QNK Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://qnkfashion.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/RukoMuslimah"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "5de67d4ad81f4cbfbff3cc84aaefa846"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/QNK-Fashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "4f48836fdc7952bb27d7663649fff4eb"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
