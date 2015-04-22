@@ -1,11 +1,11 @@
-	var shop_name = "Zaid Grosir"; // NAMA TOKO ONLINE
-	var domain = "http://zaidgrosir.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Tiara Collection"; // NAMA TOKO ONLINE
+	var domain = "http://supplier-tiaracollection.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ZaidGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "e37912133e799ee01306b5985da4bf2c"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/TiaraCollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "4a9a9e68798f819e3b9be35d27b87ee7"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
