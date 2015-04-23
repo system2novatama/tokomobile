@@ -1,11 +1,11 @@
-	var shop_name = "Dosti Butik"; // NAMA TOKO ONLINE
-	var domain = "http://dostibutik.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Ika Upit"; // NAMA TOKO ONLINE
+	var domain = "http://ikaupit.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/DostiButik"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "349d9dda326b83c300efae82a16e9883"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/IkaUpit"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "3b7fbf7c48d82c0334f889893964281b"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
