@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.weship.id"
+	id = "com.tokomobile.dostibutik"
 	version = "2.0.0">
-	<name>WeShip.id</name>
+	<name>Dosti Butik</name>
 	<description>
-	WeShip.id 2.0 by Novatama Infomedia.
+	Dosti Butik 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	WeShip.id
+	Dosti Butik
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
