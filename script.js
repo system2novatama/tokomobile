@@ -1,11 +1,11 @@
-	var shop_name = "Hyvina"; // NAMA TOKO ONLINE
-	var domain = "http://hyvina.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "LNX Shop"; // NAMA TOKO ONLINE
+	var domain = "http://lnxshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Hyvina"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "84a700e7f49413fc261a4db6de81d5fd"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/LNXShop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "d5e2874b526abdccb6d60e900231de4e"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
