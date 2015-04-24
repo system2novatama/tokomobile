@@ -1,11 +1,11 @@
-	var shop_name = "Queen Hijab"; // NAMA TOKO ONLINE
-	var domain = "http://queenhijab.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Wys Fashion "; // NAMA TOKO ONLINE
+	var domain = "http://wysfashionholic.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/QueenHijab"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "b64b91551d52b90148078f90ae6a2d32"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/WysFashion-"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "f09283bed7f64543bd6ff61ea4b50efc"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
