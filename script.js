@@ -1,11 +1,11 @@
-	var shop_name = "Wys Fashion "; // NAMA TOKO ONLINE
-	var domain = "http://wysfashionholic.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Calista Grosir"; // NAMA TOKO ONLINE
+	var domain = "http://calista-grosir.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/WysFashion-"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "f09283bed7f64543bd6ff61ea4b50efc"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/CalistaGrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "94bc35c782396ba8a69fcf50a0e1885d"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
