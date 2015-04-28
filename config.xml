@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.bajugrosirmurah"
+	id = "com.tokomobile.hmshoppati"
 	version = "2.0.0">
-	<name>Baju Grosir Murah</name>
+	<name>HM Shop Pati</name>
 	<description>
-	Baju Grosir Murah 2.0 by Novatama Infomedia.
+	HM Shop Pati 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Baju Grosir Murah
+	HM Shop Pati
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
