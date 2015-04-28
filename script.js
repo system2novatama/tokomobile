@@ -1,11 +1,11 @@
-	var shop_name = "Femme"; // NAMA TOKO ONLINE
-	var domain = "http://femmeolshop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Baju Grosir Murah"; // NAMA TOKO ONLINE
+	var domain = "http://bajugrosirmurah.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Femme"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "db6d0d2b3bd5250b5a613eef059a4391"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/bajugrosirmurah"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "ec4ee94aea19eee5e1a0adcb1ee0dbb9"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
