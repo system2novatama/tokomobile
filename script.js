@@ -1,11 +1,11 @@
-	var shop_name = "HM Shop Pati"; // NAMA TOKO ONLINE
-	var domain = "http://hmshoppati.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Aas Olshop"; // NAMA TOKO ONLINE
+	var domain = "http://aas-olshop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/hmshoppati"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "4a355c9bb6985498d1ebe1c9f34e6902"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/aasolshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "50775c2063ef2ded0c56fe7d37e772a1"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
