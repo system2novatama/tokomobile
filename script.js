@@ -1,11 +1,11 @@
-	var shop_name = "Griyatas Grosir"; // NAMA TOKO ONLINE
-	var domain = "http://griyatasgrosir.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "SHOPPA"; // NAMA TOKO ONLINE
+	var domain = "http://shoppa.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/griyatasgrosir"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "8c2caac702826f5bda8a892d59359460"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/shoppa"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "0f21655bca103917c532f1f03ef32b6e"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
