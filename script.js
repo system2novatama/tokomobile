@@ -1,11 +1,11 @@
-	var shop_name = "SHOPPA"; // NAMA TOKO ONLINE
-	var domain = "http://shoppa.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Anri Shoes"; // NAMA TOKO ONLINE
+	var domain = "http://anrishoes.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/shoppa"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "0f21655bca103917c532f1f03ef32b6e"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/anrishoes"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "dfbd2c454b0966f06814a9688f25f4a3"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
