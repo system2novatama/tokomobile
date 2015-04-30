@@ -1,11 +1,11 @@
-	var shop_name = "Radista"; // NAMA TOKO ONLINE
-	var domain = "http://radistashop.net/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Riank Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://riankfashion.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Radista"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "2f5fc7bff135281087124896cc207041"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/riankfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "999990d7bb4409a4a22368a3ee99f8f2"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
