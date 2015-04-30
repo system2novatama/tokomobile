@@ -1,11 +1,11 @@
-	var shop_name = "Anri Shoes"; // NAMA TOKO ONLINE
-	var domain = "http://anrishoes.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Radista"; // NAMA TOKO ONLINE
+	var domain = "http://radistashop.net/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/anrishoes"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "dfbd2c454b0966f06814a9688f25f4a3"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Radista"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "2f5fc7bff135281087124896cc207041"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
