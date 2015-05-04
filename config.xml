@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.kenziefashion"
+	id = "com.tokomobile.rfsclothing"
 	version = "2.0.0">
-	<name>Kenzie Fashion</name>
+	<name>RFS Clothing</name>
 	<description>
-	Kenzie Fashion 2.0 by Novatama Infomedia.
+	RFS Clothing 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Kenzie Fashion
+	RFS Clothing
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
