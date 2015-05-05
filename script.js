@@ -1,11 +1,11 @@
-	var shop_name = "RFS Clothing"; // NAMA TOKO ONLINE
-	var domain = "http://rfsclothing.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Foxy Poxy"; // NAMA TOKO ONLINE
+	var domain = "http://foxypoxy-apparel.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/rfsclothing"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "1519cb44f7ae7aafcaac8556c65bd33c"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/foxypoxy"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "84952eaf0ab89701c1e21e628b922d1a"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
