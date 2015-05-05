@@ -1,11 +1,11 @@
-	var shop_name = "Foxy Poxy"; // NAMA TOKO ONLINE
-	var domain = "http://foxypoxy-apparel.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "GDROBE"; // NAMA TOKO ONLINE
+	var domain = "http://gdrobe.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/foxypoxy"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "84952eaf0ab89701c1e21e628b922d1a"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/gdrobe"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "720e32e9fe433f3f149e86957cb7cac4"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
