@@ -1,11 +1,11 @@
-	var shop_name = "GDROBE"; // NAMA TOKO ONLINE
-	var domain = "http://gdrobe.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Ophie Shop"; // NAMA TOKO ONLINE
+	var domain = "http://ophieshop.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/gdrobe"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "720e32e9fe433f3f149e86957cb7cac4"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/ophieshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "94bf1f5473de5b0298a9b6f084612236"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
