@@ -1,11 +1,11 @@
-	var shop_name = "Saly Collection"; // NAMA TOKO ONLINE
-	var domain = "http://salycollection.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "MetroTenabang"; // NAMA TOKO ONLINE
+	var domain = "http://metrotenabang.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/salycollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "72d14bbdcb3b156df341e478775cc7e6"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/MetroTenabang"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "ece9eaead9cb3c6f43c777f74c5feae1"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
