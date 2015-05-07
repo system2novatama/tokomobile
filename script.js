@@ -1,11 +1,11 @@
-	var shop_name = "Ophie Shop"; // NAMA TOKO ONLINE
-	var domain = "http://ophieshop.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Saly Collection"; // NAMA TOKO ONLINE
+	var domain = "http://salycollection.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/ophieshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "94bf1f5473de5b0298a9b6f084612236"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/salycollection"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "72d14bbdcb3b156df341e478775cc7e6"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
