@@ -1,12 +1,12 @@
 
-	var shop_name = "Galeri Adella"; // NAMA TOKO ONLINE
-	var domain = "http://adellaoshop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Riank Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://riankfashion.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/GaleriAdella"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "2cb4f392e49a301ab63454ab7844a389"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/riankfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "999990d7bb4409a4a22368a3ee99f8f2"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
