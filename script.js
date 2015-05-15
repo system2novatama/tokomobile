@@ -1,22 +1,12 @@
 
-<<<<<<< HEAD
-	var shop_name = "Chavenshop"; // NAMA TOKO ONLINE
-	var domain = "http://chaven-shop.com/mobile/"; // DOMAIN URL ADMIN
-=======
-	var shop_name = "Master Butik Online"; // NAMA TOKO ONLINE
-	var domain = "http://masterbutikonlineshop.com/mobile/"; // DOMAIN URL ADMIN
->>>>>>> d177e14e0314874bad41406c3051ee5813678e1b
+	var shop_name = "Shiny Shop"; // NAMA TOKO ONLINE
+	var domain = "http://bajugrosirshiny.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-<<<<<<< HEAD
-	var dir_image = "Pictures/Chavenshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "084647fa21a4b41cbc3f170e5b03a534"; // ISI DENGAN TOKEN 
-=======
-	var dir_image = "Pictures/masterbutikonlineshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "cc281b9f9f6bce7a7d833a4f06cca7a7"; // ISI DENGAN TOKEN 
->>>>>>> d177e14e0314874bad41406c3051ee5813678e1b
+	var dir_image = "Pictures/bajugrosirshiny"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "c647968097ff4fb365d49ccd8e24ed63"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
