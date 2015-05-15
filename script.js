@@ -1,12 +1,12 @@
 
-	var shop_name = "Shiny Shop"; // NAMA TOKO ONLINE
-	var domain = "http://bajugrosirshiny.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Chavenshop"; // NAMA TOKO ONLINE
+	var domain = "http://chaven-shop.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/bajugrosirshiny"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "c647968097ff4fb365d49ccd8e24ed63"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Chavenshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "084647fa21a4b41cbc3f170e5b03a534"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();

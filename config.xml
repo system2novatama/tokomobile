@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.shinyshop"
+	id = "com.tokomobile.chavenshop"
 	version = "2.0.0">
-	<name>Shiny Shop</name>
+	<name>Chavenshop</name>
 	<description>
-	Shiny Shop 2.0 by Novatama Infomedia.
+	Chavenshop 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Shiny Shop
+	Chavenshop
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
