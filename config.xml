@@ -2,6 +2,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
+<<<<<<< HEAD
 	id = "com.tokomobile.chavenshop"
 	version = "2.0.0">
 	<name>Chavenshop</name>
@@ -10,6 +11,16 @@
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
 	Chavenshop
+=======
+	id = "com.tokomobile.masterbutikonline"
+	version = "2.0.0">
+	<name>Master Butik Online</name>
+	<description>
+	Master Butik Online 2.0 by Novatama Infomedia.
+	</description>
+	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
+	Master Butik Online
+>>>>>>> d177e14e0314874bad41406c3051ee5813678e1b
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
