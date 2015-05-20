@@ -1,12 +1,12 @@
 
-	var shop_name = "Elyssabeth"; // NAMA TOKO ONLINE
-	var domain = "http://elyssabeth-shop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Rollas Fashion"; // NAMA TOKO ONLINE
+	var domain = "http://rollasfashion.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/Elyssabeth"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "77fe74fa2433f27e2d8d106e1492a57f"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/rollasfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "13f54d8c4654a6e2790422500890821e"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
