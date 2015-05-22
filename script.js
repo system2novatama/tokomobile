@@ -1,12 +1,12 @@
 
-	var shop_name = "Rollas Fashion"; // NAMA TOKO ONLINE
-	var domain = "http://rollasfashion.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "pakaianrajut.com"; // NAMA TOKO ONLINE
+	var domain = "http://pakaian-rajut.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/rollasfashion"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "13f54d8c4654a6e2790422500890821e"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/pakaianrajut"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "971f8956f68d2b0784f0393dccad89b4"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
