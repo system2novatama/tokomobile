@@ -1,12 +1,12 @@
 
-	var shop_name = "pakaianrajut.com"; // NAMA TOKO ONLINE
-	var domain = "http://pakaian-rajut.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Baim56sportstore"; // NAMA TOKO ONLINE
+	var domain = "http://baim-56sportstorenfashion.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/pakaianrajut"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "971f8956f68d2b0784f0393dccad89b4"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/Baim56sportstore"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "bc00488af3f32c38116eabaf854a9311"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
