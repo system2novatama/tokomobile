@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.cutgrosir"
+	id = "com.tokomobile.mscollection"
 	version = "2.0.0">
-	<name>Cut Grosir</name>
+	<name>MS Collection</name>
 	<description>
-	Cut Grosir 2.0 by Novatama Infomedia.
+	MS Collection 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Cut Grosir
+	MS Collection
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
