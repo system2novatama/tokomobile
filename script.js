@@ -1,12 +1,12 @@
 
-	var shop_name = "MS Collection"; // NAMA TOKO ONLINE
-	var domain = "http://msonlineshop.net/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "DIVI"; // NAMA TOKO ONLINE
+	var domain = "http://divishoes.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/msonlineshop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "67dbca20c094a7574eee3c4ea4e19a30"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/divishoes"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "dc13fc2090072eec36ab33acf3e49a83"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
