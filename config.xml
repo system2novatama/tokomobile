@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.divi"
+	id = "com.tokomobile.baim56sportstore"
 	version = "2.0.0">
-	<name>DIVI</name>
+	<name>Baim56sportstore</name>
 	<description>
-	DIVI 2.0 by Novatama Infomedia.
+	Baim56sportstore 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	DIVI
+	Baim56sportstore
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
