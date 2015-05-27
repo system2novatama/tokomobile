@@ -1,12 +1,12 @@
 
-	var shop_name = "Murni Shop"; // NAMA TOKO ONLINE
-	var domain = "http://murnishop.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Quinta Mobile Store"; // NAMA TOKO ONLINE
+	var domain = "http://quintamobilestore.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/murnishop"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "b450f3aa355ff063cbf8b95cb84338d9"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/quintamobilestore"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "43026c187cc4aa2a9a0227dd76575170"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
