@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.quintamobilestore"
+	id = "com.tokomobile.lophshop"
 	version = "2.0.0">
-	<name>Quinta Mobile Store</name>
+	<name>Lophshop</name>
 	<description>
-	Quinta Mobile Store 2.0 by Novatama Infomedia.
+	Lophshop 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	Quinta Mobile Store
+	Lophshop
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
