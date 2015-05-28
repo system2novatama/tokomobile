@@ -1,12 +1,12 @@
 
-	var shop_name = "TOKO DISCOUNT"; // NAMA TOKO ONLINE
-	var domain = "http://toko-discount.com/mobile/"; // DOMAIN URL ADMIN
+	var shop_name = "Quinta"; // NAMA TOKO ONLINE
+	var domain = "http://quintamobilestore.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	
 	var base_url = domain+"_api_/android"; // URL API
 	var base_url_media = admin_url+"media"; // DIREKTORI PENYIMPANAN IMAGE DI HOSTING
-	var dir_image = "Pictures/tokodiscount"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
-	var token = "e434bc5bb877c0d63393387d3f33d617"; // ISI DENGAN TOKEN 
+	var dir_image = "Pictures/quintamobilestore"; // DIREKTORI PENYIMPANAN IMAGE DI SD CARD
+	var token = "43026c187cc4aa2a9a0227dd76575170"; // ISI DENGAN TOKEN 
 	
 var cart_item_id = new Array();
 	var cart_item_qty = new Array();
