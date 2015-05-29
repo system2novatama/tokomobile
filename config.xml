@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id = "com.tokomobile.dclothonlineshop"
+	id = "com.tokomobile.vksboutique"
 	version = "2.0.0">
-	<name>dCloth Online Shop</name>
+	<name>VKS Boutique</name>
 	<description>
-	dCloth Online Shop 2.0 by Novatama Infomedia.
+	VKS Boutique 2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	dCloth Online Shop
+	VKS Boutique
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
