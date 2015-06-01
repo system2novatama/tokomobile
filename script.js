@@ -1,5 +1,5 @@
 
-	var shop_name = "VKS Boutique"; // NAMA TOKO ONLINE
+	var shop_name = "VKS Boutique "; // NAMA TOKO ONLINE
 	var domain = "http://vksboutique.linkaplikasi.com/mobile/"; // DOMAIN URL ADMIN
 	var admin_url = domain;
 	

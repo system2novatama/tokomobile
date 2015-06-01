@@ -4,12 +4,12 @@
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id = "com.tokomobile.vksboutique"
 	version = "2.0.0">
-	<name>VKS Boutique</name>
+	<name>VKS Boutique </name>
 	<description>
-	VKS Boutique 2.0 by Novatama Infomedia.
+	VKS Boutique  2.0 by Novatama Infomedia.
 	</description>
 	<author href="http://tokomobile.co.id" email="info@novatama.co.id">
-	VKS Boutique
+	VKS Boutique 
 	</author>
 	<!--
 	If you do not want any permissions to be added to your app, add the
